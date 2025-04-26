@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors()); 
 
-const serviceAccount = require('./g-edu-4c960-firebase-adminsdk-fbsvc-16c2b59ed9.json');
+const serviceAccount = require('/etc/secrets/g-edu-4c960-firebase-adminsdk-fbsvc-16c2b59ed9.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
